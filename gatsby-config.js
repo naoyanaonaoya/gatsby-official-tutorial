@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `gatsby-official-tutorial`,
     siteUrl: "https://gatsbyofficialtutorialmai51639.gatsbyjs.io/",
+    content: "lDcNDARs_FdlEcqxQHVRabe7E4XCf55T21pQRjwD8c",
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
@@ -17,5 +18,6 @@ module.exports = {
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-react-helmet",
   ],
 };
