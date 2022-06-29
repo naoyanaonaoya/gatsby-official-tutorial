@@ -9,6 +9,7 @@ const SEO = () => {
         siteMetadata {
           title
           content
+          name
         }
       }
     }
@@ -19,7 +20,8 @@ const SEO = () => {
       <html lang="ja" />
       <title>{data.site.siteMetadata.title}</title>
       <meta
-        name={data.site.siteMetadata.title}
+        title={data.site.siteMetadata.title}
+        name={data.site.siteMetadata.name}
         content={data.site.siteMetadata.content}
       />
     </Helmet>

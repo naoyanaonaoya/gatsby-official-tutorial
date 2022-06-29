@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `gatsby-official-tutorial`,
     siteUrl: "https://gatsbyofficialtutorialmai51639.gatsbyjs.io/",
+    name: "google-site-verification",
     content: "lDcNDARs_FdlEcqxQHVRabe7E4XCf55T21pQRjwD8c",
   },
   plugins: [
