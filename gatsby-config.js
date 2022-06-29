@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `gatsby-official-tutorial`,
+    siteUrl: "https://gatsbyofficialtutorialmai51639.gatsbyjs.io/",
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
@@ -15,5 +16,6 @@ module.exports = {
     },
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
+    "gatsby-plugin-sitemap",
   ],
 };
