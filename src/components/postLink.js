@@ -1,25 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
-import {
-  postLink,
-  postLinkBody,
-  postLinkText,
-  postLinkData,
-  postLinkImage,
-  postLinkAnchor,
-} from "./postLink.module.css";
+import { postLink, postLinkImage, postLinkAnchor } from "./postLink.module.css";
 
 const PostLink = (props) => {
-  const {
-    title,
-    image,
-    description,
-    slug,
-    updatedAt,
-    publishedAt,
-    body,
-    bodymd,
-  } = props.post;
+  const { title, image, slug, publishedAt, body } = props.post;
   const pageLink = `/post/${slug}`;
 
   return (
@@ -36,7 +20,6 @@ const PostLink = (props) => {
           <h2>{title}</h2>
           <p className="postLinkBody">{body.body}</p>
           <p className="postLinkData">{publishedAt}</p>
-          {/* <Markdown>{bodymd.childMdx.body}</Markdown> */}
         </div>
       </div>
     </Link>

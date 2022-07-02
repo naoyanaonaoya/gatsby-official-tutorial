@@ -2,12 +2,12 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import PostLink from "../components/postLink";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 
 const Content = ({ data }) => {
   return (
     <Layout>
-      <SEO />
+      <Seo />
       {data.allContentfulBlogPost.edges.map((edge) => (
         <React.Fragment key={edge.node.slug}>
           <PostLink post={edge.node} />

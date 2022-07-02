@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import useSiteMetadata from "../hooks/use-site-metadata";
 
 const SEO = () => {
-  const { title, siteUrl, name, content } = useSiteMetadata();
+  const { title, name, content } = useSiteMetadata();
   return (
     <Helmet>
       <html lang="ja" />

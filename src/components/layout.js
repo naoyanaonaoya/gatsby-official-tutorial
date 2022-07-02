@@ -13,7 +13,7 @@ import {
 const Layout = (props) => {
   // https://dezanari.com/react-component-props-object/
   const { pageTitle, children } = props;
-  const { title, siteUrl, name, content } = useSiteMetadata();
+  const { title } = useSiteMetadata();
 
   return (
     <>

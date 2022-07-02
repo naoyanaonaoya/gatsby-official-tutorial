@@ -1,15 +1,16 @@
 import React from "react";
 import Layout from "../components/layout";
 import Markdown from "../components/markdown";
-import { postHeader, postDate, postImage, postBody } from "./post.module.css";
+import Seo from "../components/seo";
+import { postHeader, postDate, postImage } from "./post.module.css";
 
 const Post = ({ pageContext }) => {
-  const { title, image, body, bodymd, updatedAt, publishedAt, slug } =
-    pageContext.post;
+  const { title, image, bodymd, updatedAt } = pageContext.post;
 
   return (
     <>
       <Layout>
+        <Seo />
         <div className={postHeader}>
           <h1>{title}</h1>
           <p className={postDate}>{updatedAt}</p>
