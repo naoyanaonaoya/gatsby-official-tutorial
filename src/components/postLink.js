@@ -8,7 +8,6 @@ import {
   postLinkImage,
   postLinkAnchor,
 } from "./PostLink.module.css";
-// import Markdown from "./Markdown";
 
 const PostLink = (props) => {
   const {
