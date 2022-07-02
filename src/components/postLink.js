@@ -10,7 +10,8 @@ import {
 const RANDOM_IMG = "https://source.unsplash.com/collection/175083/640x360";
 
 const PostLink = (props) => {
-  const { title, image, description, slug, updatedAt, body } = props.post;
+  const { title, image, description, slug, updatedAt, body, publishedAt } =
+    props.post;
   return (
     <div className={postLink}>
       <div>
@@ -19,7 +20,7 @@ const PostLink = (props) => {
       <div className="postLinkText">
         <h2>{title}</h2>
         <p className="postLinkBody">{body.body}</p>
-        <p className="postLinkData">{updatedAt}</p>
+        <p className="postLinkData">{publishedAt}</p>
       </div>
       {/* <div>
         <img src={RANDOM_IMG} className={postLinkImage} alt="post-cover" />

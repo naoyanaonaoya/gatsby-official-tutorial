@@ -19,7 +19,7 @@ const Content = ({ data }) => {
 
 export const query = graphql`
   query MyQuery {
-    allContentfulBlogPost {
+    allContentfulBlogPost(sort: { fields: publishedAt, order: DESC }) {
       edges {
         node {
           title
@@ -34,6 +34,7 @@ export const query = graphql`
           }
           slug
           updatedAt(locale: "ja-Jp", formatString: "YYYY年MM月DD日")
+          publishedAt(locale: "ja-Jp", formatString: "YYYY年MM月DD日")
           body {
             body
           }
