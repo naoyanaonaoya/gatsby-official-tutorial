@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
-import Markdown from "../components/markdown";
+// import Markdown from "../components/markdown";
 import Seo from "../components/seo";
 import { postHeader, postDate, postImage } from "./post.module.css";
 

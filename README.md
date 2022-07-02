@@ -1,3 +1,5 @@
+https://zenn.dev/tomokiya/books/4b13342f6d878b93e06c
+
 # よくわからない場所
 
 - pages/blog/index.js において存在しない記事が表示される
