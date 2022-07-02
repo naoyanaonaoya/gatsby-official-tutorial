@@ -1,12 +1,6 @@
 import * as React from "react";
 import Layout from "../components/Layout";
-import {
-  postHeader,
-  postDate,
-  postImage,
-  postBody,
-  imageDiv,
-} from "./post.module.css";
+import { postHeader, postDate, postImage, postBody } from "./post.module.css";
 import Markdown from "../components/Markdown";
 
 const Post = ({ pageContext }) => {
@@ -20,7 +14,7 @@ const Post = ({ pageContext }) => {
           <h1>{title}</h1>
           <p className={postDate}>{updatedAt}</p>
         </div>
-        <div className={imageDiv}>
+        <div>
           <img src={image.file.url} className={postImage} alt="post-cover" />
         </div>
         <Markdown>{bodymd.childMdx.body}</Markdown>
