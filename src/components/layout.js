@@ -1,5 +1,6 @@
 import * as React from "react";
-import { Link, useStaticQuery, graphql } from "gatsby";
+import { Link } from "gatsby";
+import useSiteMetadata from "../hooks/use-site-metadata";
 import {
   container,
   heading,
@@ -8,33 +9,19 @@ import {
   navLinkText,
   siteTitle,
 } from "./layout.module.css";
-// console.log(container);
 
 const Layout = (props) => {
   // https://dezanari.com/react-component-props-object/
   const { pageTitle, children } = props;
-  // const pageTitle = props.pageTitle;
-  // const children = props.children;
-  // console.log(children);
-
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
-  // console.log(data);
+  const { title, siteUrl, name, content } = useSiteMetadata();
 
   return (
     <>
       <div className={container}>
         <title>
-          {pageTitle} | {data.site.siteMetadata.title}
+          {pageTitle} / {title}
         </title>
-        <header className={siteTitle}>{data.site.siteMetadata.title}</header>
+        <header className={siteTitle}>{title}</header>
         <nav>
           <ul className={navLinks}>
             <li className={navLinkItem}>
