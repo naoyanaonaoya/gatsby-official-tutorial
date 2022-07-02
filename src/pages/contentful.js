@@ -1,8 +1,8 @@
 import * as React from "react";
 import { graphql } from "gatsby";
-import Layout from "../components/layout";
-import PostLink from "../components/postLink";
-import SEO from "../components/seo";
+import Layout from "../components/Layout";
+import PostLink from "../components/PostLink";
+import SEO from "../components/Seo";
 
 const Content = ({ data }) => {
   return (
@@ -37,6 +37,11 @@ export const query = graphql`
           publishedAt(locale: "ja-Jp", formatString: "YYYY年MM月DD日")
           body {
             body
+          }
+          bodymd {
+            childMdx {
+              body
+            }
           }
         }
       }

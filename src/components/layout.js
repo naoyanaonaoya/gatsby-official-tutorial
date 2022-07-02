@@ -8,7 +8,7 @@ import {
   navLinkItem,
   navLinkText,
   siteTitle,
-} from "./layout.module.css";
+} from "./Layout.module.css";
 
 const Layout = (props) => {
   // https://dezanari.com/react-component-props-object/
