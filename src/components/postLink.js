@@ -7,7 +7,7 @@ import {
   postLinkData,
   postLinkImage,
   postLinkAnchor,
-} from "./PostLink.module.css";
+} from "./postLink.module.css";
 
 const PostLink = (props) => {
   const {

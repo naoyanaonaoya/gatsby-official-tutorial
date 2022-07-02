@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
-import PostLink from "../components/PostLink";
+import PostLink from "../components/postLink";
 import SEO from "../components/seo";
 
 const Content = ({ data }) => {
