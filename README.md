@@ -1,4 +1,8 @@
-# test
+# よくわからない場所
+
+- pages/blog/index.js において存在しない記事が表示される
+  - 今は map 内の条件分岐で、slug が null のときは表示しないようにしている
+    - https://teratail.com/questions/323365
 
 <p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
