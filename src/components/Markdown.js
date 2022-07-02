@@ -1,8 +1,7 @@
-import * as React from "react";
+import React from "react";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { MDXProvider } from "@mdx-js/react";
-
-import ShortCodes from "./ShortCodes";
+import ShortCodes from "./shortCodes";
 
 const Markdown = ({ children }) => {
   // https://ayumitk.com/ja/blog/mdx-blog-posts-with-contentful/

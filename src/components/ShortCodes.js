@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { bcgRED } from "./shortCodes.module.css";
 
 const ShortCodes = ({ children }) => {

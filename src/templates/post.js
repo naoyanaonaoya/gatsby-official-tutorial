@@ -1,7 +1,7 @@
-import * as React from "react";
+import React from "react";
 import Layout from "../components/layout";
-import { postHeader, postDate, postImage, postBody } from "./post.module.css";
 import Markdown from "../components/markdown";
+import { postHeader, postDate, postImage, postBody } from "./post.module.css";
 
 const Post = ({ pageContext }) => {
   const { title, image, body, bodymd, updatedAt, publishedAt, slug } =
