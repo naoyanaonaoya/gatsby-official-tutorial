@@ -18,7 +18,7 @@ const Post = ({ pageContext }) => {
         <div>
           <img src={image.file.url} className={postImage} alt="post-cover" />
         </div>
-        <Markdown>{bodymd.childMdx.body}</Markdown>
+        {/* <Markdown>{bodymd.childMdx.body}</Markdown> */}
       </Layout>
     </>
   );
