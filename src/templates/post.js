@@ -1,5 +1,5 @@
 import * as React from "react";
-import Layout from "../components/Layout";
+import Layout from "../components/layout";
 import { postHeader, postDate, postImage, postBody } from "./post.module.css";
 import Markdown from "../components/Markdown";
 

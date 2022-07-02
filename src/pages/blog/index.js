@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link, graphql } from "gatsby";
-import Layout from "../../components/Layout";
-import SEO from "../../components/Seo";
+import Layout from "../../components/layout";
+import SEO from "../../components/seo";
 
 const BlogPage = ({ data }) => {
   return (
