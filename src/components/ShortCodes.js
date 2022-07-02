@@ -1,5 +1,5 @@
 import * as React from "react";
-import { bcgRED } from "./ShortCodes.module.css";
+import { bcgRED } from "./shortCodes.module.css";
 
 const ShortCodes = ({ children }) => {
   return (
