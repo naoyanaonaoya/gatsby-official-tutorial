@@ -40,6 +40,11 @@ const Layout = (props) => {
               </Link>
             </li>
             <li className={navLinkItem}>
+              <Link to="/contentful" className={navLinkText}>
+                Contentful
+              </Link>
+            </li>
+            <li className={navLinkItem}>
               <Link to="/contact" className={navLinkText}>
                 Contact
               </Link>

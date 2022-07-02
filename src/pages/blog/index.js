@@ -2,15 +2,15 @@ import * as React from "react";
 import { Link, graphql } from "gatsby";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
-// import {} from "./index.module.css";
+import PostLink from "../../components/postLink";
 
 const BlogPage = ({ data }) => {
-  // console.log(data);
   return (
     <>
       <Layout pageTitle="My Blog Posts">
         <SEO />
         <ul>
+          {console.log(data.allMdx.nodes)}
           {data.allMdx.nodes.map((node) => (
             <article key={node.id}>
               <h2>
@@ -39,15 +39,5 @@ export const query = graphql`
     }
   }
 `;
-
-/*
-query MyQuery {
-  allFile {
-    nodes {
-      name
-    }
-  }
-}
-*/
 
 export default BlogPage;
