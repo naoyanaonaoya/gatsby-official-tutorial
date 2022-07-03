@@ -1,7 +1,7 @@
 import React from "react";
-import Layout from "../components/Layout";
+import Layout from "../components/layout";
 // import Markdown from "../components/markdown";
-import Seo from "../components/Seo";
+import Seo from "../components/seo";
 import { postHeader, postDate, postImage, postBody } from "./post.module.css";
 
 const Post = ({ pageContext }) => {

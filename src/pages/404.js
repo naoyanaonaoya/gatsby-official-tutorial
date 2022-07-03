@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import Seo from "../components/Seo";
+import Seo from "../components/seo";
 
 // styles
 const pageStyles = {
