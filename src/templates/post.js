@@ -2,10 +2,10 @@ import React from "react";
 import Layout from "../components/layout";
 // import Markdown from "../components/markdown";
 import Seo from "../components/seo";
-import { postHeader, postDate, postImage } from "./post.module.css";
+import { postHeader, postDate, postImage, postBody } from "./post.module.css";
 
 const Post = ({ pageContext }) => {
-  const { title, image, bodymd, updatedAt } = pageContext.post;
+  const { title, image, bodymd, updatedAt, body } = pageContext.post;
 
   return (
     <>
@@ -18,6 +18,7 @@ const Post = ({ pageContext }) => {
         <div>
           <img src={image.file.url} className={postImage} alt="post-cover" />
         </div>
+        <div className={postBody}>{body.body}</div>
         {/* <Markdown>{bodymd.childMdx.body}</Markdown> */}
       </Layout>
     </>
