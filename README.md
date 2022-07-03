@@ -5,6 +5,8 @@ https://zenn.dev/tomokiya/books/4b13342f6d878b93e06c
 - pages/blog/index.js において存在しない記事が表示される
   - 今は map 内の条件分岐で、slug が null のときは表示しないようにしている
     - https://teratail.com/questions/323365
+- markdown が導入できない
+  - なんかうまくいかない
 
 <p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
