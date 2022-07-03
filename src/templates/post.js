@@ -1,11 +1,11 @@
 import React from "react";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 // import Markdown from "../components/markdown";
-import Seo from "../components/seo";
+import Seo from "../components/Seo";
 import { postHeader, postDate, postImage, postBody } from "./post.module.css";
 
 const Post = ({ pageContext }) => {
-  const { title, image, bodymd, updatedAt, body } = pageContext.post;
+  const { title, image, updatedAt, body } = pageContext.post;
 
   return (
     <>

@@ -1,8 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../components/layout";
-import PostLink from "../components/postLink";
-import Seo from "../components/seo";
+import Layout from "../components/Layout";
+import PostLink from "../components/PostLink";
+import Seo from "../components/Seo";
 
 const Content = ({ data }) => {
   return (

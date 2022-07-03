@@ -2,8 +2,8 @@ import React from "react";
 import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import Layout from "../../components/layout";
-import Seo from "../../components/seo";
+import Layout from "../../components/Layout";
+import Seo from "../../components/Seo";
 
 const BlogPost = ({ data }) => {
   const image = getImage(data.mdx.frontmatter.hero_image);
